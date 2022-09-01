@@ -34,7 +34,7 @@ const App = () => {
     if(mode) {
       setField(Array(chosenMode).fill(Array(chosenMode).fill(false)));
     }
-  }, []);
+  }, [mode]);
 
   const start = () => {
   setLoading(true);
