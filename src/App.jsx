@@ -34,7 +34,7 @@ const App = () => {
     if(mode) {
       setField(Array(chosenMode).fill(Array(chosenMode).fill(false)));
     }
-  });
+  }, []);
 
   const start = () => {
   setLoading(true);
@@ -57,7 +57,7 @@ const reset = () => {
       <div className={isStarted === false ? 'before-wrapper' : 'wrapper'}>
           <header>
             <div className="title">
-            <img src={logo} className='logo' alt='image' />
+            <img src={logo} className='logo' alt='logo' />
             <h1 className='task-name'>"Hover Box"</h1>
             </div>
             <h2 className='task-descr'>Test task</h2>
