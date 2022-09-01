@@ -21,27 +21,43 @@ main {
   grid-area: main;
 }
 
+.selected-section {
+  grid-area: sidebar;
+}
+
 header {
   margin: 20px 0;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   color: #333;
   grid-area: header;
 }
 
+.title {
+  display: flex;
+  flex-direction: row;
+}
+
 .logo {
   height: 55px;
+  margin-top: 10px;
   margin-right: 10px;
   cursor: pointer;
 }
 
 .logo:hover {
-  transform:scale(1.1)
+  transform: scale(1.1)
 }
 
 .task-name {
   color: #059ce2;
+  margin-right: 5px;
+}
+
+.task-descr {
+ margin-top: 0;
 }
 
 h2 {
@@ -62,34 +78,39 @@ h2 {
   height: 45px;
   font-size: 16px;
   font-weight: 400;
-  border: 2px solid #999;
-  border-radius: 8px;
+  border: 1px solid black;
+  border-radius: 10px;
 }
 
 .choose-mode:focus {
   outline: 0;
 }
 
-.start-btn {
+.button-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.app-btn {
+  margin-right: 15px;
   font-weight: 400;
   height: 40px;
   font-size: 16px;
   border-radius: 10px;
   color: #fff;
   background-color: #03a8f4;
-  border: 2px solid #03a8f4;
+  border: 1px solid #03a8f4;
   transition: all 0.2s ease-in-out;
 }
 
-.start-btn:hover {
+.app-btn:hover {
   cursor: pointer;
   background-color: #059ce2;
 }
 
-.start-btn:disabled {
+.app-btn:disabled {
   color: grey;
   cursor: auto;
-  border-color: grey;
 }
 
 .btn-text {
@@ -102,6 +123,7 @@ h2 {
   border-top: 1px solid #333;
   border-left: 1px solid #333;
   margin-bottom: 15px;
+  margin-left: 5px;
 }
 
 .row {
@@ -119,14 +141,16 @@ h2 {
   background-color: #40E0D0;
 }
 
-.selected-section {
-  grid-area: sidebar;
+.loading-msg {
+  justify-content: center;
+  text-align: center;
 }
 
 .items-title {
   font-weight: 500;
-  margin-top: 5px;
-  margin-bottom: 40px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  margin-left: 35px;
 }
 
 .list-item {
