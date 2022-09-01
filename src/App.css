@@ -1,0 +1,145 @@
+
+.before-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.wrapper {
+  display: grid;
+  width: fit-content;
+  margin: 0 auto;
+  column-gap: 45px;
+  grid-template-columns: 1fr 200px;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "header header"
+  "main sidebar";
+}
+
+main {
+  grid-area: main;
+}
+
+header {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  grid-area: header;
+}
+
+.logo {
+  height: 55px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.logo:hover {
+  transform:scale(1.1)
+}
+
+.task-name {
+  color: #059ce2;
+}
+
+h2 {
+  margin-bottom: 15px;
+}
+
+.choose {
+  display: grid;
+  grid-template-columns: 140px 90px;
+  margin-bottom: 40px;
+  column-gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.choose-mode {
+  padding: 0 10px;
+  height: 45px;
+  font-size: 16px;
+  font-weight: 400;
+  border: 2px solid #999;
+  border-radius: 8px;
+}
+
+.choose-mode:focus {
+  outline: 0;
+}
+
+.start-btn {
+  font-weight: 400;
+  height: 40px;
+  font-size: 16px;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #03a8f4;
+  border: 2px solid #03a8f4;
+  transition: all 0.2s ease-in-out;
+}
+
+.start-btn:hover {
+  cursor: pointer;
+  background-color: #059ce2;
+}
+
+.start-btn:disabled {
+  color: grey;
+  cursor: auto;
+  border-color: grey;
+}
+
+.btn-text {
+  text-transform: uppercase;
+}
+
+.field {
+  height: max-content;
+  width: max-content;
+  border-top: 1px solid #333;
+  border-left: 1px solid #333;
+  margin-bottom: 15px;
+}
+
+.row {
+  display: flex;
+}
+
+.item {
+  width: 50px;
+  height: 50px;
+  border-right: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+
+.item-hovered {
+  background-color: #40E0D0;
+}
+
+.selected-section {
+  grid-area: sidebar;
+}
+
+.items-title {
+  font-weight: 500;
+  margin-top: 5px;
+  margin-bottom: 40px;
+}
+
+.list-item {
+  padding: 12px 8px;
+  border-radius: 8px;
+  background-color: #fbf8e3;
+  color: yellowgreen;
+  margin-top: 5px;
+}
+
+.selected-list {
+  height: 500px;
+  overflow-y: auto;
+  list-style: none;
+  width: 100%;
+}
