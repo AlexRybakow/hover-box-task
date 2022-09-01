@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/hover-box-task/static/css/main.901f81e0.css",
-    "main.js": "/hover-box-task/static/js/main.4d21b27f.js",
+    "main.js": "/hover-box-task/static/js/main.be899fc1.js",
     "static/media/table_cell.png": "/hover-box-task/static/media/table_cell.e459b1c091f67681cd45.png",
     "index.html": "/hover-box-task/index.html",
     "main.901f81e0.css.map": "/hover-box-task/static/css/main.901f81e0.css.map",
-    "main.4d21b27f.js.map": "/hover-box-task/static/js/main.4d21b27f.js.map"
+    "main.be899fc1.js.map": "/hover-box-task/static/js/main.be899fc1.js.map"
   },
   "entrypoints": [
     "static/css/main.901f81e0.css",
-    "static/js/main.4d21b27f.js"
+    "static/js/main.be899fc1.js"
   ]
 }
